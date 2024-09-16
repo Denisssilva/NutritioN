@@ -12,10 +12,9 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          NutritioN
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -30,7 +29,7 @@
           header
           class="text-grey-8"
         >
-          Essential Links
+          Opções
         </q-item-label>
         <EssentialLink
           v-for="link in essentialLinks"
@@ -51,46 +50,46 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
-    title: 'Docs',
+    title: 'Início',
     caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    icon: 'home',
+    to:'/'
   },
   {
-    title: 'Github',
+    title: 'Novo usuário',
     caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    icon: 'person_add_alt',
+    link: '/novoUsuario'
   },
   {
-    title: 'Discord Chat Channel',
+    title: 'Novo peso',
     caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    icon: 'post_add',
+    link: '/novoPeso'
   },
   {
-    title: 'Forum',
+    title: 'Gráfico peso',
     caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
+    icon: 'equalizer',
+    link: 'grafPeso'
   },
   {
-    title: 'Twitter',
+    title: 'Gráfico imc',
     caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    icon: 'equalizer',
+    link: 'grafImc'
   },
   {
-    title: 'Facebook',
+    title: 'Hidratação',
     caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
+    icon: 'local_drink',
+    link: 'hidratacao'
   },
   {
-    title: 'Quasar Awesome',
+    title: 'Sobre',
     caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    icon: 'info',
+    link: 'sobre'
   }
 ];
 
